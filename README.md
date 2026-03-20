@@ -1,3 +1,4 @@
+![Zephyros DatePicker](assets/banner.png)
 \# Zephyros DatePicker
 
 
