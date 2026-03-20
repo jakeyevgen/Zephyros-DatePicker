@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- ===================== CORE ===================== -->
+    <SolidColorBrush x:Key="AppBg" Color="#FFF3F4F6"/>
+    <SolidColorBrush x:Key="TopBg" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="CardBg" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="CardBorder" Color="#FFC9CFD8"/>
+
+    <!-- Main text hierarchy -->
+    <SolidColorBrush x:Key="PrimaryForegroundBrush" Color="#FF111827"/>
+    <SolidColorBrush x:Key="MutedText" Color="#FF4B5563"/>
+    <SolidColorBrush x:Key="TopIconFg" Color="#FF4B5563"/>
+    <SolidColorBrush x:Key="WindowTitleTextBrush" Color="#FF111827"/>
+
+    <!-- Accent -->
+    <SolidColorBrush x:Key="AccentRed" Color="#FFE0002A"/>
+    <SolidColorBrush x:Key="AccentRedHover" Color="#FFFF1744"/>
+    <SolidColorBrush x:Key="AccentRedPressed" Color="#FFC4001F"/>
+    <SolidColorBrush x:Key="AccentRedDisabled" Color="#88E0002A"/>
+
+    <!-- Surfaces -->
+    <SolidColorBrush x:Key="CardRedTint" Color="#FFFCE8EC"/>
+    <SolidColorBrush x:Key="SettingsBg" Color="#FFF6F7F9"/>
+    <SolidColorBrush x:Key="AvatarBackgroundBrush" Color="#FFE5E7EB"/>
+    <SolidColorBrush x:Key="OverlayDimBrush" Color="#66000000"/>
+    <SolidColorBrush x:Key="TransparentBrush" Color="#00000000"/>
+
+    <!-- ===================== GRID / LIST TEXT ===================== -->
+    <!-- Use these in ProductView / tables / list rows -->
+    <SolidColorBrush x:Key="GridHeaderTextBrush" Color="#FF111827"/>
+    <SolidColorBrush x:Key="GridTextBrush" Color="#FF374151"/>
+    <SolidColorBrush x:Key="GridMutedTextBrush" Color="#FF6B7280"/>
+    <SolidColorBrush x:Key="GridAccentTextBrush" Color="#FFB00020"/>
+
+    <!-- Optional helpers for row states -->
+    <SolidColorBrush x:Key="GridSuccessTextBrush" Color="#FF15803D"/>
+    <SolidColorBrush x:Key="GridWarningTextBrush" Color="#FFB45309"/>
+    <SolidColorBrush x:Key="GridDangerTextBrush" Color="#FFB00020"/>
+
+    <!-- ===================== INPUTS ===================== -->
+    <SolidColorBrush x:Key="GrayInputBgBrush" Color="#FFF3F4F6"/>
+    <SolidColorBrush x:Key="GrayInputBorderBrush" Color="#FFC6CBD3"/>
+    <SolidColorBrush x:Key="GrayInputTextBrush" Color="#FF111827"/>
+    <SolidColorBrush x:Key="GrayInputPlaceholderBrush" Color="#FF6B7280"/>
+
+    <!-- Search -->
+    <SolidColorBrush x:Key="SearchBoxBackgroundBrush" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="SearchBoxBorderBrush" Color="#FFD1D5DB"/>
+    <SolidColorBrush x:Key="SearchBoxForegroundBrush" Color="#FF111827"/>
+
+    <!-- ===================== CHECKBOX ===================== -->
+    <SolidColorBrush x:Key="ZChk_BoxBg" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="ZChk_BoxBorder" Color="#FF9CA3AF"/>
+    <SolidColorBrush x:Key="ZChk_BoxBg_Hover" Color="#FFF3F4F6"/>
+    <SolidColorBrush x:Key="ZChk_BoxBorder_Hover" Color="#FF6B7280"/>
+    <SolidColorBrush x:Key="ZChk_Red" Color="#FFE0002A"/>
+    <SolidColorBrush x:Key="ZChk_Red_Hover" Color="#FFFF1744"/>
+    <SolidColorBrush x:Key="ZChk_Red_Pressed" Color="#FFC4001F"/>
+
+    <!-- ===================== TOP BAR / WINDOW ===================== -->
+    <SolidColorBrush x:Key="TopBarBackgroundBrush" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="TopBarBottomLineBrush" Color="#FFD8DCE3"/>
+
+    <SolidColorBrush x:Key="DialogBackgroundBrush" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="DialogHeaderBackgroundBrush" Color="#FFF3F4F6"/>
+    <SolidColorBrush x:Key="DialogBorderBrush" Color="#FFD1D5DB"/>
+
+    <!-- ===================== CHARTS ===================== -->
+    <SolidColorBrush x:Key="ChartBg" Color="#FFF8FAFC"/>
+    <SolidColorBrush x:Key="ChartPanelBackgroundBrush" Color="#FFF8FAFC"/>
+
+    <SolidColorBrush x:Key="ChartGridBrush" Color="#22000000"/>
+    <SolidColorBrush x:Key="ChartGridLineBrush" Color="#22000000"/>
+    <SolidColorBrush x:Key="ChartGridLine" Color="#22000000"/>
+
+    <!-- Keep both old and new keys so all custom charts work -->
+    <SolidColorBrush x:Key="ChartAxisBrush" Color="#66000000"/>
+    <SolidColorBrush x:Key="ChartAxisText" Color="#FF4B5563"/>
+    <SolidColorBrush x:Key="ChartAxisAccent" Color="#FF15803D"/>
+
+    <SolidColorBrush x:Key="ChartLabelBrush" Color="#FF4B5563"/>
+    <SolidColorBrush x:Key="ChartTextBrush" Color="#FF4B5563"/>
+    <SolidColorBrush x:Key="ChartText" Color="#FF111827"/>
+    <SolidColorBrush x:Key="ChartTextMuted" Color="#FF6B7280"/>
+
+    <SolidColorBrush x:Key="ChartLineBrush" Color="#FFE0002A"/>
+
+    <SolidColorBrush x:Key="ChartBarRed" Color="#FFE0002A"/>
+    <SolidColorBrush x:Key="ChartBarYellow" Color="#FFF59E0B"/>
+    <SolidColorBrush x:Key="ChartBarGreen" Color="#FF22C55E"/>
+    <SolidColorBrush x:Key="ChartBarAmber" Color="#FFFFB300"/>
+
+    <CornerRadius x:Key="ChartBarRadius">10</CornerRadius>
+    <x:Double x:Key="ChartGridLineOpacity">0.60</x:Double>
+
+    <!-- ===================== TITLE BAR ===================== -->
+    <SolidColorBrush x:Key="TitleBarBackgroundBrush" Color="#FFE7E7E7"/>
+    <SolidColorBrush x:Key="TitleBarForegroundBrush" Color="#FF111827"/>
+    <SolidColorBrush x:Key="TitleBarButtonHoverBrush" Color="#FFDCDCDC"/>
+    <SolidColorBrush x:Key="TitleBarButtonPressedBrush" Color="#FFD2D2D2"/>
+    <SolidColorBrush x:Key="TitleBarInactiveBackgroundBrush" Color="#FFE7E7E7"/>
+    <SolidColorBrush x:Key="TitleBarInactiveForegroundBrush" Color="#FF787878"/>
+
+    <!-- ===================== Панель вкладок ===================== -->
+    <SolidColorBrush x:Key="TabActiveTextBrush" Color="#FF111827"/>
+    <SolidColorBrush x:Key="TabInactiveTextBrush" Color="#FF6B7280"/>
+
+    <!-- ===================== Обычные кнопки ===================== -->
+    <SolidColorBrush x:Key="ActionSecondaryButtonHoverBrush" Color="#FFF3F4F6"/>
+    <SolidColorBrush x:Key="ActionSecondaryButtonHoverBorderBrush" Color="#FFBFC6D1"/>
+    <SolidColorBrush x:Key="ActionSecondaryButtonPressedBrush" Color="#FFE5E7EB"/>
+    <SolidColorBrush x:Key="ActionSecondaryButtonPressedBorderBrush" Color="#FFAEB7C3"/>
+
+    <SolidColorBrush x:Key="ActionSecondaryButtonBrush" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="ActionSecondaryButtonTextBrush" Color="#FF111827"/>
+    <SolidColorBrush x:Key="ActionSecondaryButtonBorderBrush" Color="#FFD1D5DB"/>
+
+    <!-- ===================== Cискового текстбокса и комбобокса ===================== -->
+    <SolidColorBrush x:Key="BottomFieldBackgroundBrush" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="BottomFieldForegroundBrush" Color="#FF111827"/>
+    <SolidColorBrush x:Key="BottomFieldPlaceholderBrush" Color="#FF6B7280"/>
+    <SolidColorBrush x:Key="BottomFieldBorderBrush" Color="#FFD1D5DB"/>
+    <SolidColorBrush x:Key="BottomFieldHoverBackgroundBrush" Color="#FFF9FAFB"/>
+    <SolidColorBrush x:Key="BottomFieldHoverBorderBrush" Color="#FFBFC6D1"/>
+    <SolidColorBrush x:Key="BottomFieldFocusedBackgroundBrush" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="BottomFieldFocusedBorderBrush" Color="#FF9CA3AF"/>
+    <SolidColorBrush x:Key="BottomFieldGlyphBrush" Color="#FF6B7280"/>
+
+    <!-- ===================== DATE PICKER / WHEEL ===================== -->
+    <SolidColorBrush x:Key="DatePickerBorderBrush" Color="#FFD1D5DB"/>
+    <SolidColorBrush x:Key="DatePickerHoverBorderBrush" Color="#FFBFC6D1"/>
+
+    <SolidColorBrush x:Key="DatePickerFlyoutBackgroundBrush" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="DatePickerFlyoutBorderBrush" Color="#FFD1D5DB"/>
+
+    <SolidColorBrush x:Key="DatePickerSelectionBackgroundBrush" Color="#FFEAF2FF"/>
+    <SolidColorBrush x:Key="DatePickerSelectionBorderBrush" Color="#FFC8DAF5"/>
+    <SolidColorBrush x:Key="DatePickerSeparatorBrush" Color="#FFD1D5DB"/>
+
+    <SolidColorBrush x:Key="DatePickerTextBrush" Color="#FF111827"/>
+    <SolidColorBrush x:Key="DatePickerPlaceholderBrush" Color="#FF6B7280"/>
+    <SolidColorBrush x:Key="DatePickerIconBrush" Color="#FF6B7280"/>
+
+    <SolidColorBrush x:Key="WheelButtonBackgroundBrush" Color="#FFF3F4F6"/>
+    <SolidColorBrush x:Key="WheelButtonHoverBackgroundBrush" Color="#FFE5E7EB"/>
+    <SolidColorBrush x:Key="WheelButtonPressedBackgroundBrush" Color="#FFDCE3EC"/>
+    <SolidColorBrush x:Key="WheelButtonForegroundBrush" Color="#FF111827"/>
+
+    <SolidColorBrush x:Key="WheelItemHoverBackgroundBrush" Color="#FFF3F4F6"/>
+
+    <!-- ===================== Search textbox на главной форме ===================== -->
+    <SolidColorBrush x:Key="TopBarSearchBackgroundBrush" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="TopBarSearchForegroundBrush" Color="#FF111827"/>
+    <SolidColorBrush x:Key="TopBarSearchPlaceholderBrush" Color="#FF6B7280"/>
+    <SolidColorBrush x:Key="TopBarSearchBorderBrush" Color="#FFD1D5DB"/>
+
+    <SolidColorBrush x:Key="TopBarSearchHoverBackgroundBrush" Color="#FFF9FAFB"/>
+    <SolidColorBrush x:Key="TopBarSearchHoverBorderBrush" Color="#FFBFC6D1"/>
+
+    <SolidColorBrush x:Key="TopBarSearchFocusedBackgroundBrush" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="TopBarSearchFocusedBorderBrush" Color="#FF9CA3AF"/>
+
+    <!-- ===================== Маленикие панельки ===================== -->
+    <SolidColorBrush x:Key="SplitLeftBg" Color="#FFF7F7F7"/>
+    <SolidColorBrush x:Key="SplitRightBg" Color="#FFE3E6EB"/>
+    <SolidColorBrush x:Key="SplitHoverBg" Color="#FFD9DEE5"/>
+
+    <!-- ===================== Большие кнопки ===================== -->
+    <SolidColorBrush x:Key="AppearanceSplitButtonBackground" Color="#FFE3E6EB"/>
+    <SolidColorBrush x:Key="AppearanceSplitButtonForeground" Color="#FF374151"/>
+    <SolidColorBrush x:Key="AppearanceSplitButtonBorderBrush" Color="#FFC9CFD8"/>
+
+    <SolidColorBrush x:Key="AppearanceSplitButtonHoverBackground" Color="#FFD9DEE5"/>
+    <SolidColorBrush x:Key="AppearanceSplitButtonHoverBorderBrush" Color="#FFBCC5D0"/>
+
+    <SolidColorBrush x:Key="AppearanceSplitButtonPressedBackground" Color="#FFD0D6DF"/>
+    <SolidColorBrush x:Key="AppearanceSplitButtonPressedBorderBrush" Color="#FFB0BAC7"/>
+
+    <!-- ===================== ZEPHYROS DROPDOWN ===================== -->
+    <SolidColorBrush x:Key="DatabaseComboBoxOpenBackground" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="DatabaseComboBoxBackground" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="DatabaseComboBoxForeground" Color="#FF111827"/>
+    <SolidColorBrush x:Key="DatabaseComboBoxBorderBrush" Color="#FFD1D5DB"/>
+    <SolidColorBrush x:Key="DatabaseComboBoxPlaceholderBrush" Color="#FF6B7280"/>
+
+    <SolidColorBrush x:Key="DatabaseComboBoxHoverBackground" Color="#FFF9FAFB"/>
+    <SolidColorBrush x:Key="DatabaseComboBoxHoverBorderBrush" Color="#FFBFC6D1"/>
+
+    <SolidColorBrush x:Key="DatabaseComboBoxPressedBackground" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="DatabaseComboBoxPressedBorderBrush" Color="#FF9CA3AF"/>
+
+    <SolidColorBrush x:Key="DatabaseComboBoxPopupBackground" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="DatabaseComboBoxPopupBorderBrush" Color="#FFD1D5DB"/>
+    <SolidColorBrush x:Key="DatabaseComboBoxItemHoverBackground" Color="#FFF3F4F6"/>
+    <SolidColorBrush x:Key="DatabaseComboBoxItemSelectedBackground" Color="#FFE5E7EB"/>
+    <SolidColorBrush x:Key="DatabaseComboBoxGlyphBrush" Color="#FF6B7280"/>
+
+    <!-- ===================== RADIOBUTTON ===================== -->
+    <SolidColorBrush x:Key="ZRad_OffBorder" Color="#FF9CA3AF"/>
+    <SolidColorBrush x:Key="ZRad_Red" Color="#FFE0002A"/>
+    <SolidColorBrush x:Key="ZRad_Red_Hover" Color="#FFFF1744"/>
+
+    <!-- ===================== GRAY INPUT STATES ===================== -->
+    <SolidColorBrush x:Key="GrayInputHoverBackgroundBrush" Color="#FFF7F8FA"/>
+    <SolidColorBrush x:Key="GrayInputHoverBorderBrush" Color="#FFBFC6D1"/>
+    <SolidColorBrush x:Key="GrayInputFocusedBackgroundBrush" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="GrayInputFocusedBorderBrush" Color="#FF9CA3AF"/>
+
+    <!-- Tab button style with red underline (Button, not ToggleButton) -->
+    <SolidColorBrush x:Key="TabButtonHoverBackground" Color="#11000000"/>
+    <SolidColorBrush x:Key="TabButtonPressedBackground" Color="#1A000000"/>
+
+    <!-- Delete mini action button -->
+    <SolidColorBrush x:Key="DeleteButtonForegroundBrush" Color="#FFB94A4A"/>
+    <SolidColorBrush x:Key="DeleteButtonHoverForegroundBrush" Color="#FFFF5F5F"/>
+    <SolidColorBrush x:Key="DeleteButtonHoverBackgroundBrush" Color="#2DFF5050"/>
+    <SolidColorBrush x:Key="DeleteButtonPressedForegroundBrush" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="DeleteButtonPressedBackgroundBrush" Color="#55FF5050"/>
+
+    <!-- ===================== CREW CARD ===================== -->
+    <SolidColorBrush x:Key="CrewCardTopBackgroundBrush" Color="#FFF3F4F6"/>
+    <SolidColorBrush x:Key="CrewCardBottomBackgroundBrush" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="CrewCardNameBrush" Color="#FF0F9FA8"/>
+    <SolidColorBrush x:Key="CrewCardRankBrush" Color="#FF374151"/>
+
+    <!-- ===================== CREW CARD TEXT ===================== -->
+    <SolidColorBrush x:Key="CrewCardNumberBrush" Color="#FF111827"/>
+    <SolidColorBrush x:Key="CrewCardAttachmentBrush" Color="#FF15803D"/>
+
+    <SolidColorBrush x:Key="CrewCardLabelBrush" Color="#FF111827"/>
+    <SolidColorBrush x:Key="CrewCardValueBrush" Color="#FF111827"/>
+
+    <SolidColorBrush x:Key="CrewCardMoneyWarningBrush" Color="#FFB45309"/>
+    <SolidColorBrush x:Key="CrewCardMoneySuccessBrush" Color="#FF15803D"/>
+
+    <SolidColorBrush x:Key="CrewCardRemarksLabelBrush" Color="#FF111827"/>
+    <SolidColorBrush x:Key="CrewCardRemarksValueBrush" Color="#FF111827"/>
+
+    <!-- ===================== CREW CARD BUTTONS ===================== -->
+    <SolidColorBrush x:Key="CrewCardEditButtonBackgroundBrush" Color="#FF22C55E"/>
+    <SolidColorBrush x:Key="CrewCardEditButtonForegroundBrush" Color="#FF0B0B0B"/>
+    <SolidColorBrush x:Key="CrewCardEditButtonHoverBackgroundBrush" Color="#FF2ED86C"/>
+    <SolidColorBrush x:Key="CrewCardEditButtonPressedBackgroundBrush" Color="#FF1EAF54"/>
+
+    <SolidColorBrush x:Key="CrewCardReportButtonBackgroundBrush" Color="#FFE9EDF3"/>
+    <SolidColorBrush x:Key="CrewCardReportButtonForegroundBrush" Color="#FF111827"/>
+    <SolidColorBrush x:Key="CrewCardReportButtonHoverBackgroundBrush" Color="#FFDCE3EC"/>
+    <SolidColorBrush x:Key="CrewCardReportButtonPressedBackgroundBrush" Color="#FFD0D9E4"/>
+
+    <SolidColorBrush x:Key="CrewCardDeleteButtonBackgroundBrush" Color="#FFEF4444"/>
+    <SolidColorBrush x:Key="CrewCardDeleteButtonForegroundBrush" Color="#FF0B0B0B"/>
+    <SolidColorBrush x:Key="CrewCardDeleteButtonHoverBackgroundBrush" Color="#FFF85A5A"/>
+    <SolidColorBrush x:Key="CrewCardDeleteButtonPressedBackgroundBrush" Color="#FFD93B3B"/>
+
+    <SolidColorBrush x:Key="CrewCardMoreButtonBackgroundBrush" Color="#FFE9EDF3"/>
+    <SolidColorBrush x:Key="CrewCardMoreButtonForegroundBrush" Color="#FF2563EB"/>
+    <SolidColorBrush x:Key="CrewCardMoreButtonHoverBackgroundBrush" Color="#FFDCE3EC"/>
+    <SolidColorBrush x:Key="CrewCardMoreButtonPressedBackgroundBrush" Color="#FFD0D9E4"/>
+
+    <!-- ===================== CREW CARD STATES ===================== -->
+
+    <SolidColorBrush x:Key="CrewCardBorderBrush" Color="#FFD1D5DB"/>
+    <SolidColorBrush x:Key="CrewCardBorderHoverBrush" Color="#FF9CA3AF"/>
+    <SolidColorBrush x:Key="CrewCardBorderPressedBrush" Color="#FF6B7280"/>
+
+    <SolidColorBrush x:Key="CrewCardBackgroundBrush" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="CrewCardBackgroundHoverBrush" Color="#FFF9FAFB"/>
+    <SolidColorBrush x:Key="CrewCardBackgroundPressedBrush" Color="#FFF3F4F6"/>
+
+    <SolidColorBrush x:Key="CrewCardAccentBrush" Color="#FFDC2626"/>
+
+
+    <!-- ===================== SHADOWS / GRADIENTS ===================== -->
+    <LinearGradientBrush x:Key="TopBarShadowBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#22000000" Offset="0"/>
+        <GradientStop Color="#00000000" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="BottomCardBtnBg" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#00FFFFFF" Offset="0.0"/>
+        <GradientStop Color="#10FFFFFF" Offset="0.45"/>
+        <GradientStop Color="#1FFFFFFF" Offset="1.0"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="BottomCardBtnBg_Hover" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#00FFFFFF" Offset="0.0"/>
+        <GradientStop Color="#16FFFFFF" Offset="0.45"/>
+        <GradientStop Color="#2BFFFFFF" Offset="1.0"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="BottomCardBtnBg_Pressed" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#00FFFFFF" Offset="0.0"/>
+        <GradientStop Color="#20FFFFFF" Offset="0.45"/>
+        <GradientStop Color="#36FFFFFF" Offset="1.0"/>
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="BottomCardActionButtonForeground" Color="#FFFFFFFF"/>
+    <CornerRadius x:Key="BottomCardActionButtonCornerRadius">0,0,6,6</CornerRadius>
+
+    <LinearGradientBrush x:Key="CardShadowAccent" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="#12000000" Offset="0.0"/>
+        <GradientStop Color="#22000000" Offset="1.0"/>
+    </LinearGradientBrush>
+
+</ResourceDictionary>

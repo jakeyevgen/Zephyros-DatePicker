@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="Zephyros.Controls.ZephyrosWheelColumn"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <Style x:Key="WheelArrowButtonStyle" TargetType="Button">
+            <Setter Property="Height" Value="38"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="Margin" Value="0"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Visibility" Value="Collapsed"/>
+            <Setter Property="Background" Value="{ThemeResource WheelButtonBackgroundBrush}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="CornerRadius" Value="4"/>
+            <Setter Property="Foreground" Value="{ThemeResource WheelButtonForegroundBrush}"/>
+            <Setter Property="UseSystemFocusVisuals" Value="False"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Border x:Name="RootBorder"
+                                    Background="{TemplateBinding Background}"
+                                    CornerRadius="{TemplateBinding CornerRadius}">
+                                <ContentPresenter Content="{TemplateBinding Content}"
+                                                  ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                  Margin="{TemplateBinding Padding}"/>
+                            </Border>
+
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+
+                                    <VisualState x:Name="PointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootBorder"
+                                                                           Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame KeyTime="0"
+                                                                        Value="{ThemeResource WheelButtonHoverBackgroundBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootBorder"
+                                                                           Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame KeyTime="0"
+                                                                        Value="{ThemeResource WheelButtonPressedBackgroundBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetName="RootBorder"
+                                                             Storyboard.TargetProperty="Opacity"
+                                                             To="0.45"
+                                                             Duration="0:0:0"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid x:Name="RootGrid"
+          Background="Transparent"
+          PointerWheelChanged="RootGrid_PointerWheelChanged"
+          PointerEntered="RootGrid_PointerEntered"
+          PointerExited="RootGrid_PointerExited">
+
+        <Grid.Clip>
+            <RectangleGeometry Rect="0,0,500,342"/>
+        </Grid.Clip>
+
+        <!-- Items -->
+        <StackPanel x:Name="ItemsHost"
+                    VerticalAlignment="Center"
+                    Orientation="Vertical"
+                    Spacing="0">
+            <StackPanel.RenderTransform>
+                <TranslateTransform x:Name="ItemsTranslate" Y="0"/>
+            </StackPanel.RenderTransform>
+        </StackPanel>
+
+        <!-- Top button -->
+        <Button x:Name="TopArrowButton"
+                Style="{StaticResource WheelArrowButtonStyle}"
+                VerticalAlignment="Top"
+                Click="TopArrowButton_Click">
+            <FontIcon Glyph="&#xE70E;"
+                      FontFamily="Segoe Fluent Icons"
+                      FontSize="10"
+                      Foreground="{ThemeResource WheelButtonForegroundBrush}"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"/>
+        </Button>
+
+        <!-- Bottom button -->
+        <Button x:Name="BottomArrowButton"
+                Style="{StaticResource WheelArrowButtonStyle}"
+                VerticalAlignment="Bottom"
+                Click="BottomArrowButton_Click">
+            <FontIcon Glyph="&#xE70D;"
+                      FontFamily="Segoe Fluent Icons"
+                      FontSize="10"
+                      Foreground="{ThemeResource WheelButtonForegroundBrush}"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"/>
+        </Button>
+    </Grid>
+</UserControl>
