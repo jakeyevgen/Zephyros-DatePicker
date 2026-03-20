@@ -1,3 +1,4 @@
+![License](https://img.shields.io/badge/license-MIT-green)
 ![Zephyros DatePicker](assets/banner.png)
 \# Zephyros DatePicker
 
@@ -110,6 +111,18 @@ Zephyros-DatePicker/
 ├─ ZephyrosWheelColumn.xaml
 
 └─ ZephyrosWheelColumn.xaml.cs
+
+
+## 🎨 Themes Preview
+
+### 🌙 Dark Theme
+![Dark Theme](assets/screenshots/dark.png)
+
+### ☀️ Light Theme
+![Light Theme](assets/screenshots/light.png)
+
+### 🎨 Color Theme
+![Color Theme](assets/screenshots/color.png)
 
 
 
@@ -310,14 +323,6 @@ Theme-based applications
 
 
 &#x20;NuGet package
-
-
-
-📸 Screenshots
-
-
-
-(add later)
 
 
 
